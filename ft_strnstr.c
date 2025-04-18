@@ -6,7 +6,7 @@
 /*   By: jvan-der <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 18:45:32 by jvan-der          #+#    #+#             */
-/*   Updated: 2025/04/14 15:08:08 by jvan-der         ###   ########.fr       */
+/*   Updated: 2025/04/18 16:26:20 by jvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,12 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+/*
+int main ()
+{
+	char *big = NULL;
+	char *little = NULL;
+	size_t i = 10;
+
+	ft_strnstr(big, little, i);
+}*/
