@@ -6,11 +6,10 @@
 /*   By: jvan-der <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 18:41:24 by jvan-der          #+#    #+#             */
-/*   Updated: 2025/04/18 15:32:41 by jvan-der         ###   ########.fr       */
+/*   Updated: 2025/04/18 20:21:45 by jvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

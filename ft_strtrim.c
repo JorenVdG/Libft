@@ -6,7 +6,7 @@
 /*   By: jvan-der <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 09:54:02 by jvan-der          #+#    #+#             */
-/*   Updated: 2025/04/14 17:48:31 by jvan-der         ###   ########.fr       */
+/*   Updated: 2025/04/18 20:12:38 by jvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (ft_strchr(set, s1[start]) && start <= end)
 		start++;
 	if (start > end)
-		return (ft_strdup(s1 + end + 1));
+		return (ft_strdup(""));
 	while (ft_strchr(set, s1[end]) && end >= 0)
 		end--;
 	str = malloc(end - start + 2);

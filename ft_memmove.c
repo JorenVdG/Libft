@@ -6,11 +6,10 @@
 /*   By: jvan-der <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 15:57:40 by jvan-der          #+#    #+#             */
-/*   Updated: 2025/04/14 16:37:16 by jvan-der         ###   ########.fr       */
+/*   Updated: 2025/04/18 19:36:18 by jvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)

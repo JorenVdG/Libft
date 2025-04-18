@@ -6,13 +6,11 @@
 /*   By: jvan-der <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 10:13:07 by jvan-der          #+#    #+#             */
-/*   Updated: 2025/04/14 10:20:34 by jvan-der         ###   ########.fr       */
+/*   Updated: 2025/04/18 19:41:59 by jvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stddef.h>
 
 static size_t	ft_countword(const char *s, char c)
 {

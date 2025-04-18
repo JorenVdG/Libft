@@ -6,12 +6,11 @@
 /*   By: jvan-der <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 18:41:07 by jvan-der          #+#    #+#             */
-/*   Updated: 2025/04/14 13:43:45 by jvan-der         ###   ########.fr       */
+/*   Updated: 2025/04/18 19:36:28 by jvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

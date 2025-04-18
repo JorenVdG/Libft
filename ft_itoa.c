@@ -6,13 +6,11 @@
 /*   By: jvan-der <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 09:58:45 by jvan-der          #+#    #+#             */
-/*   Updated: 2025/04/14 13:50:49 by jvan-der         ###   ########.fr       */
+/*   Updated: 2025/04/18 19:24:23 by jvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stddef.h>
 
 static int	ft_intlen(int n)
 {
