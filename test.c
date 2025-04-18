@@ -6,7 +6,7 @@
 /*   By: jvan-der <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/14 14:23:15 by jvan-der          #+#    #+#             */
-/*   Updated: 2025/04/18 14:33:11 by jvan-der         ###   ########.fr       */
+/*   Updated: 2025/04/18 15:18:17 by jvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -55,11 +55,16 @@ void test_part1(void)
     printf("\n--- Part 1: Libc Functions ---\n");
 
     // Character checks
-    TEST("ft_isalpha", (ft_isalpha('A') != 0) == (isalpha('A') != 0) && (ft_isalpha('1') != 0) == (isalpha('1') != 0));
-    TEST("ft_isdigit", (ft_isdigit('9') != 0) == (isdigit('9') != 0) && (ft_isdigit('A') != 0) == (isdigit('A') != 0));
-    TEST("ft_isalnum", (ft_isalnum('9') != 0) == (isalnum('9') != 0) && (ft_isalnum('#') != 0) == (isalnum('#') != 0));
-    TEST("ft_isascii", (ft_isascii('A') != 0) == (isascii('A') != 0) && (ft_isascii(200) != 0) == (isascii(200) != 0));
-    TEST("ft_isprint", (ft_isprint('A') != 0) == (isprint('A') != 0) && (ft_isprint(31) != 0) == (isprint(31) != 0));
+    TEST("ft_isalpha", (ft_isalpha('A') != 0) == (isalpha('A') != 0) \
+    && (ft_isalpha('1') != 0) == (isalpha('1') != 0));
+    TEST("ft_isdigit", (ft_isdigit('9') != 0) == (isdigit('9') != 0)  \
+    && (ft_isdigit('A') != 0) == (isdigit('A') != 0));
+    TEST("ft_isalnum", (ft_isalnum('9') != 0) == (isalnum('9') != 0)  \
+    && (ft_isalnum('#') != 0) == (isalnum('#') != 0));
+    TEST("ft_isascii", (ft_isascii('A') != 0) == (isascii('A') != 0)  \
+    && (ft_isascii(200) != 0) == (isascii(200) != 0));
+    TEST("ft_isprint", (ft_isprint('A') != 0) == (isprint('A') != 0)  \
+    && (ft_isprint(31) != 0) == (isprint(31) != 0));
 
     // Memory and string
     char s1[] = "Hello";
@@ -98,7 +103,8 @@ void test_part1(void)
     TEST("ft_tolower", ft_tolower('Z') == tolower('Z'));
 
     TEST("ft_strchr", ft_strchr("hello", 'e') == strchr("hello", 'e'));
-    TEST("ft_strrchr", ft_strrchr("hello", 'l') - "hello" == strrchr("hello", 'l') - "hello");
+    TEST("ft_strrchr", ft_strrchr("hello", 'l') - "hello" \
+		    == strrchr("hello", 'l') - "hello");
 
     TEST("ft_strncmp", ft_strncmp("abc", "abc", 3) == strncmp("abc", "abc", 3));
     TEST("ft_memchr", ft_memchr("abcde", 'c', 5) != NULL);
@@ -138,7 +144,8 @@ void test_part2(void)
 
     // ft_split
     char **split = ft_split("hello world test", ' ');
-    TEST("ft_split", strcmp(split[0], "hello") == 0 && strcmp(split[1], "world") == 0 && split[3] == NULL);
+    TEST("ft_split", strcmp(split[0], "hello") == 0  \
+		    && strcmp(split[1], "world") == 0 && split[3] == NULL);
     for (int i = 0; split[i]; i++) free(split[i]);
     free(split);
 

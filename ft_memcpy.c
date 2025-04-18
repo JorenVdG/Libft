@@ -6,7 +6,7 @@
 /*   By: jvan-der <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 15:47:44 by jvan-der          #+#    #+#             */
-/*   Updated: 2025/04/09 16:26:31 by jvan-der         ###   ########.fr       */
+/*   Updated: 2025/04/18 15:28:07 by jvan-der         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*d;
 	const unsigned char	*s;
 
+	if (!dest || !src)
+		return (NULL);
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
 	i = 0;
